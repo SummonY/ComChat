@@ -1,0 +1,1 @@
+../../../Nimbus/src/attributedlabel/src/NimbusAttributedLabel.h

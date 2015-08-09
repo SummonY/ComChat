@@ -1,0 +1,1 @@
+../../../Nimbus/src/badge/src/NIBadgeView.h

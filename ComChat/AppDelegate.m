@@ -7,16 +7,53 @@
 //
 
 #import "AppDelegate.h"
+#import "Macros/Macros.h"
+#import "RTCManager.h"
+#import "SignInViewController.h"
 
-@interface AppDelegate ()
+@interface AppDelegate () {
+    Reachability *hostReach;
+}
+
+@property (nonatomic, strong) SignInViewController *signInViewController;
 
 @end
 
 @implementation AppDelegate
 
+- (void)reachabilityChanged:(NSNotification *)note
+{
+    Reachability *curReach = [note object];
+    NSParameterAssert([curReach isKindOfClass:[Reachability class]]);
+    NetworkStatus status = [curReach currentReachabilityStatus];
+    
+    if (status == NotReachable) {
+        UIAlertView *alterView = [[UIAlertView alloc] initWithTitle:@"网络不可达" message:@"未检测到网络" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+        [alterView show];
+    }
+}
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    /* 初始化导航条 */
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.signInViewController = [[SignInViewController alloc] init];
+    
+    UINavigationController *navigation = [[UINavigationController alloc] initWithRootViewController:self.signInViewController];
+    [navigation.navigationBar setBackgroundColor:[UIColor blueColor]];
+    [navigation setNavigationBarHidden:YES];
+    self.window.rootViewController = navigation;
+    [self.window makeKeyAndVisible];
+    
+    // 开启RTC引擎
+    //[[RTCManager sharedManager] startEngine];
+    
+    /* 开启网络状态监听 */
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reachabilityChanged:) name:kReachabilityChangedNotification object:nil];
+    hostReach = [Reachability reachabilityWithHostname:XMPP_HOST_NAME];
+    [hostReach startNotifier];
     return YES;
 }
 
