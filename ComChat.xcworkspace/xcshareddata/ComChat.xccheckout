@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>4BC79CC1-F4FA-4D92-B7FE-9F5191BF0FFE</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ComChat</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>252B2747E1921D846D206FC0E13DD695D34AF883</key>
+		<string>github.com:SummonY/ComChat.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ComChat.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>252B2747E1921D846D206FC0E13DD695D34AF883</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:SummonY/ComChat.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>252B2747E1921D846D206FC0E13DD695D34AF883</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>252B2747E1921D846D206FC0E13DD695D34AF883</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ComChat</string>
+		</dict>
+	</array>
+</dict>
+</plist>

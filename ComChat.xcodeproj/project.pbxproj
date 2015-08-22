@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C5BCBFD1B884CD300362FDC /* libopencore-amrnb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C5BCBFB1B884CD300362FDC /* libopencore-amrnb.a */; };
+		5C5BCBFE1B884CD300362FDC /* libopencore-amrwb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C5BCBFC1B884CD300362FDC /* libopencore-amrwb.a */; };
 		74A68D35106C7E32C5701AFF /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42E9D3704E40491EBF2C65EC /* libPods.a */; };
 		A73BA9121B4FBF17001ACA1C /* RecentRoomsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A73BA9111B4FBF17001ACA1C /* RecentRoomsCell.m */; };
 		A73BA9151B4FEC8B001ACA1C /* GroupChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A73BA9141B4FEC8B001ACA1C /* GroupChatViewController.m */; };
@@ -310,6 +312,8 @@
 
 /* Begin PBXFileReference section */
 		42E9D3704E40491EBF2C65EC /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C5BCBFB1B884CD300362FDC /* libopencore-amrnb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libopencore-amrnb.a"; path = "ComChat/VoiceConvert/lib-x86/libopencore-amrnb.a"; sourceTree = "<group>"; };
+		5C5BCBFC1B884CD300362FDC /* libopencore-amrwb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libopencore-amrwb.a"; path = "ComChat/VoiceConvert/lib-x86/libopencore-amrwb.a"; sourceTree = "<group>"; };
 		69D8278A9F292E217A5AAC47 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		A73BA9101B4FBF17001ACA1C /* RecentRoomsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RecentRoomsCell.h; path = ComChat/ViewsController/Views/RecentRoomsCell.h; sourceTree = "<group>"; };
 		A73BA9111B4FBF17001ACA1C /* RecentRoomsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RecentRoomsCell.m; path = ComChat/ViewsController/Views/RecentRoomsCell.m; sourceTree = "<group>"; };
@@ -704,6 +708,8 @@
 				A7751A671B3263CE00D67AB6 /* AVFoundation.framework in Frameworks */,
 				A79BF78A1B607EC2000D7C80 /* libopencore-amrnb.a in Frameworks */,
 				A79BF78B1B607EC2000D7C80 /* libopencore-amrwb.a in Frameworks */,
+				5C5BCBFD1B884CD300362FDC /* libopencore-amrnb.a in Frameworks */,
+				5C5BCBFE1B884CD300362FDC /* libopencore-amrwb.a in Frameworks */,
 				74A68D35106C7E32C5701AFF /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -718,6 +724,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5C5BCBFA1B884CB500362FDC /* lib-x86 */ = {
+			isa = PBXGroup;
+			children = (
+				5C5BCBFB1B884CD300362FDC /* libopencore-amrnb.a */,
+				5C5BCBFC1B884CD300362FDC /* libopencore-amrwb.a */,
+			);
+			name = "lib-x86";
+			sourceTree = "<group>";
+		};
 		6B9664F9735D9C441842C9B6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -742,6 +757,7 @@
 				A79BF77D1B60770F000D7C80 /* opencore-amrwb */,
 				A79BF77C1B607700000D7C80 /* opencore-amrnb */,
 				A79BF77B1B6076F3000D7C80 /* lib */,
+				5C5BCBFA1B884CB500362FDC /* lib-x86 */,
 				A79BF77A1B6076CA000D7C80 /* amrwapper */,
 				A79BF7771B6076A4000D7C80 /* VoiceConverter.h */,
 				A79BF7781B6076A4000D7C80 /* VoiceConverter.mm */,
@@ -1907,8 +1923,12 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"\"$(PODS_ROOT)/XMPPFramework/Vendor/libidn\"",
+					"$(PROJECT_DIR)/ComChat/VoiceConvert/lib",
 					"\"$(SRCROOT)/ComChat/VoiceConvert/lib/\"",
-					"$(PROJECT_DIR)/ComChat/ComChat/VoiceConvert/lib",
+				);
+				"LIBRARY_SEARCH_PATHS[sdk=iphonesimulator*]" = (
+					"\"$(PODS_ROOT)/XMPPFramework/Vendor/libidn\"",
+					"\"$(SRCROOT)/ComChat/VoiceConvert/lib-x86/\"",
 				);
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1950,8 +1970,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"\"$(PODS_ROOT)/XMPPFramework/Vendor/libidn\"",
+					"$(PROJECT_DIR)/ComChat/VoiceConvert/lib",
 					"\"$(SRCROOT)/ComChat/VoiceConvert/lib/\"",
-					"$(PROJECT_DIR)/ComChat/ComChat/VoiceConvert/lib",
 				);
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
