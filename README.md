@@ -8,3 +8,8 @@
     * 好友管理模块:搜索、添加、删除好友;
     * 群组管理模块:创建、搜索、添加、退出群组等;
     * 聊天模块:一对一聊天和群聊,⽀持文本、表情、语音、图⽚等消息类型。
+
+## ScreenCapture
+![url demo](http://i.imgur.com/M4zBExj.png?1)
+
+## Contack: Summon.Yang@QQ.com
