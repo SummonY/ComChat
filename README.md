@@ -1,6 +1,6 @@
 # ComChat
-    ComChat is a free and open source instant messaging client for iOS support
-    from the XMPPFramework to handle Openfire.
+    ComChat is a free and open source instant messaging client for iOS based on
+    the XMPPFramework to handle Openfire(XMPP).
 
 ## Main Module:
     * Account Manage Module: SignUp, SignIn, etc;
