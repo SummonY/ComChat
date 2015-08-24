@@ -5,7 +5,7 @@
 ## Main Module:
     * Account Manage Module: SignUp, SignIn, etc;
     * Friend Manage Module: Search, Add, Delete friends;
-    * Group Manage Moduel: Create, Search, Join, Leave Groups;
+    * Group Manage Module: Create, Search, Join, Leave Groups;
     * Chat Module: Chat & Group Chat， supports text, expression, image, voice
         and other message types
 
