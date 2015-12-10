@@ -31,7 +31,7 @@ enum XMPPReconnectConfig
 
 #if MAC_OS_X_VERSION_MIN_REQUIRED <= MAC_OS_X_VERSION_10_5
 // SCNetworkConnectionFlags was renamed to SCNetworkReachabilityFlags in 10.6
-typedef SCNetworkConnectionFlags SCNetworkReachabilityFlags;
+//typedef SCNetworkConnectionFlags SCNetworkReachabilityFlags;
 #endif
 
 @interface XMPPReconnect (PrivateAPI)

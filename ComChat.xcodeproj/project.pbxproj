@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5C5BCBFD1B884CD300362FDC /* libopencore-amrnb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C5BCBFB1B884CD300362FDC /* libopencore-amrnb.a */; };
-		5C5BCBFE1B884CD300362FDC /* libopencore-amrwb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C5BCBFC1B884CD300362FDC /* libopencore-amrwb.a */; };
 		74A68D35106C7E32C5701AFF /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42E9D3704E40491EBF2C65EC /* libPods.a */; };
 		A73BA9121B4FBF17001ACA1C /* RecentRoomsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A73BA9111B4FBF17001ACA1C /* RecentRoomsCell.m */; };
 		A73BA9151B4FEC8B001ACA1C /* GroupChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A73BA9141B4FEC8B001ACA1C /* GroupChatViewController.m */; };
@@ -193,11 +191,6 @@
 		A79B3CA41B412C800047096B /* unselected_invite@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A79B3CA21B412C800047096B /* unselected_invite@2x.png */; };
 		A79B3CA61B4244430047096B /* user_info_bg@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A79B3CA51B4244430047096B /* user_info_bg@2x.jpg */; };
 		A79B3CA91B4278770047096B /* GroupChatViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A79B3CA81B4278770047096B /* GroupChatViewModel.m */; };
-		A79BF7791B6076A4000D7C80 /* VoiceConverter.mm in Sources */ = {isa = PBXBuildFile; fileRef = A79BF7781B6076A4000D7C80 /* VoiceConverter.mm */; };
-		A79BF7841B6079B5000D7C80 /* amrFileCodec.mm in Sources */ = {isa = PBXBuildFile; fileRef = A79BF7831B6079B5000D7C80 /* amrFileCodec.mm */; };
-		A79BF7871B607A4C000D7C80 /* wav.mm in Sources */ = {isa = PBXBuildFile; fileRef = A79BF7861B607A4C000D7C80 /* wav.mm */; };
-		A79BF78A1B607EC2000D7C80 /* libopencore-amrnb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A79BF7881B607EC2000D7C80 /* libopencore-amrnb.a */; };
-		A79BF78B1B607EC2000D7C80 /* libopencore-amrwb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A79BF7891B607EC2000D7C80 /* libopencore-amrwb.a */; };
 		A7A6F9341B462F0C003D790F /* AddContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7A6F9331B462F0C003D790F /* AddContactViewController.m */; };
 		A7AB1E611B1EDBB70003BD2F /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = A7AB1E601B1EDBB70003BD2F /* README.md */; };
 		A7AB1E651B1EDD3A0003BD2F /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = A7AB1E641B1EDD3A0003BD2F /* LICENSE */; };
@@ -312,8 +305,6 @@
 
 /* Begin PBXFileReference section */
 		42E9D3704E40491EBF2C65EC /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		5C5BCBFB1B884CD300362FDC /* libopencore-amrnb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libopencore-amrnb.a"; path = "ComChat/VoiceConvert/lib-x86/libopencore-amrnb.a"; sourceTree = "<group>"; };
-		5C5BCBFC1B884CD300362FDC /* libopencore-amrwb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libopencore-amrwb.a"; path = "ComChat/VoiceConvert/lib-x86/libopencore-amrwb.a"; sourceTree = "<group>"; };
 		69D8278A9F292E217A5AAC47 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		A73BA9101B4FBF17001ACA1C /* RecentRoomsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RecentRoomsCell.h; path = ComChat/ViewsController/Views/RecentRoomsCell.h; sourceTree = "<group>"; };
 		A73BA9111B4FBF17001ACA1C /* RecentRoomsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RecentRoomsCell.m; path = ComChat/ViewsController/Views/RecentRoomsCell.m; sourceTree = "<group>"; };
@@ -535,18 +526,6 @@
 		A79B3CA51B4244430047096B /* user_info_bg@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "user_info_bg@2x.jpg"; path = "ComChat/Resource/chat/user_info_bg@2x.jpg"; sourceTree = "<group>"; };
 		A79B3CA71B4278770047096B /* GroupChatViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GroupChatViewModel.h; path = ComChat/ViewModel/GroupChatViewModel.h; sourceTree = "<group>"; };
 		A79B3CA81B4278770047096B /* GroupChatViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GroupChatViewModel.m; path = ComChat/ViewModel/GroupChatViewModel.m; sourceTree = "<group>"; };
-		A79BF7771B6076A4000D7C80 /* VoiceConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VoiceConverter.h; path = ComChat/VoiceConvert/VoiceConverter.h; sourceTree = "<group>"; };
-		A79BF7781B6076A4000D7C80 /* VoiceConverter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = VoiceConverter.mm; path = ComChat/VoiceConvert/VoiceConverter.mm; sourceTree = "<group>"; };
-		A79BF77E1B6077B6000D7C80 /* dec_if.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = dec_if.h; path = "ComChat/VoiceConvert/opencore-amrwb/dec_if.h"; sourceTree = "<group>"; };
-		A79BF77F1B607849000D7C80 /* if_rom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = if_rom.h; path = "ComChat/VoiceConvert/opencore-amrwb/if_rom.h"; sourceTree = "<group>"; };
-		A79BF7801B607892000D7C80 /* interf_dec.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = interf_dec.h; path = "ComChat/VoiceConvert/opencore-amrnb/interf_dec.h"; sourceTree = "<group>"; };
-		A79BF7811B6078CB000D7C80 /* interf_enc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = interf_enc.h; path = "ComChat/VoiceConvert/opencore-amrnb/interf_enc.h"; sourceTree = "<group>"; };
-		A79BF7821B607952000D7C80 /* amrFileCodec.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = amrFileCodec.h; path = ComChat/VoiceConvert/amrwapper/amrFileCodec.h; sourceTree = "<group>"; };
-		A79BF7831B6079B5000D7C80 /* amrFileCodec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = amrFileCodec.mm; path = ComChat/VoiceConvert/amrwapper/amrFileCodec.mm; sourceTree = "<group>"; };
-		A79BF7851B607A18000D7C80 /* wav.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = wav.h; path = ComChat/VoiceConvert/amrwapper/wav.h; sourceTree = "<group>"; };
-		A79BF7861B607A4C000D7C80 /* wav.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = wav.mm; path = ComChat/VoiceConvert/amrwapper/wav.mm; sourceTree = "<group>"; };
-		A79BF7881B607EC2000D7C80 /* libopencore-amrnb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libopencore-amrnb.a"; path = "ComChat/VoiceConvert/lib/libopencore-amrnb.a"; sourceTree = "<group>"; };
-		A79BF7891B607EC2000D7C80 /* libopencore-amrwb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libopencore-amrwb.a"; path = "ComChat/VoiceConvert/lib/libopencore-amrwb.a"; sourceTree = "<group>"; };
 		A7A6F9321B462F0C003D790F /* AddContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddContactViewController.h; path = ComChat/ViewsController/AddContactViewController.h; sourceTree = "<group>"; };
 		A7A6F9331B462F0C003D790F /* AddContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddContactViewController.m; path = ComChat/ViewsController/AddContactViewController.m; sourceTree = "<group>"; };
 		A7AB1E601B1EDBB70003BD2F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -706,10 +685,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7751A671B3263CE00D67AB6 /* AVFoundation.framework in Frameworks */,
-				A79BF78A1B607EC2000D7C80 /* libopencore-amrnb.a in Frameworks */,
-				A79BF78B1B607EC2000D7C80 /* libopencore-amrwb.a in Frameworks */,
-				5C5BCBFD1B884CD300362FDC /* libopencore-amrnb.a in Frameworks */,
-				5C5BCBFE1B884CD300362FDC /* libopencore-amrwb.a in Frameworks */,
 				74A68D35106C7E32C5701AFF /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -724,15 +699,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5C5BCBFA1B884CB500362FDC /* lib-x86 */ = {
-			isa = PBXGroup;
-			children = (
-				5C5BCBFB1B884CD300362FDC /* libopencore-amrnb.a */,
-				5C5BCBFC1B884CD300362FDC /* libopencore-amrwb.a */,
-			);
-			name = "lib-x86";
-			sourceTree = "<group>";
-		};
 		6B9664F9735D9C441842C9B6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -749,58 +715,6 @@
 				A75801F91B244E3E009E08CE /* NSDate+IM.m */,
 			);
 			name = Categories;
-			sourceTree = "<group>";
-		};
-		A79BF7761B6075E7000D7C80 /* VoiceConvert */ = {
-			isa = PBXGroup;
-			children = (
-				A79BF77D1B60770F000D7C80 /* opencore-amrwb */,
-				A79BF77C1B607700000D7C80 /* opencore-amrnb */,
-				A79BF77B1B6076F3000D7C80 /* lib */,
-				5C5BCBFA1B884CB500362FDC /* lib-x86 */,
-				A79BF77A1B6076CA000D7C80 /* amrwapper */,
-				A79BF7771B6076A4000D7C80 /* VoiceConverter.h */,
-				A79BF7781B6076A4000D7C80 /* VoiceConverter.mm */,
-			);
-			name = VoiceConvert;
-			sourceTree = "<group>";
-		};
-		A79BF77A1B6076CA000D7C80 /* amrwapper */ = {
-			isa = PBXGroup;
-			children = (
-				A79BF7821B607952000D7C80 /* amrFileCodec.h */,
-				A79BF7831B6079B5000D7C80 /* amrFileCodec.mm */,
-				A79BF7851B607A18000D7C80 /* wav.h */,
-				A79BF7861B607A4C000D7C80 /* wav.mm */,
-			);
-			name = amrwapper;
-			sourceTree = "<group>";
-		};
-		A79BF77B1B6076F3000D7C80 /* lib */ = {
-			isa = PBXGroup;
-			children = (
-				A79BF7881B607EC2000D7C80 /* libopencore-amrnb.a */,
-				A79BF7891B607EC2000D7C80 /* libopencore-amrwb.a */,
-			);
-			name = lib;
-			sourceTree = "<group>";
-		};
-		A79BF77C1B607700000D7C80 /* opencore-amrnb */ = {
-			isa = PBXGroup;
-			children = (
-				A79BF7801B607892000D7C80 /* interf_dec.h */,
-				A79BF7811B6078CB000D7C80 /* interf_enc.h */,
-			);
-			name = "opencore-amrnb";
-			sourceTree = "<group>";
-		};
-		A79BF77D1B60770F000D7C80 /* opencore-amrwb */ = {
-			isa = PBXGroup;
-			children = (
-				A79BF77E1B6077B6000D7C80 /* dec_if.h */,
-				A79BF77F1B607849000D7C80 /* if_rom.h */,
-			);
-			name = "opencore-amrwb";
 			sourceTree = "<group>";
 		};
 		A7AB1E5F1B1EDB780003BD2F /* Doc */ = {
@@ -1279,7 +1193,6 @@
 				A7AB1E9B1B1F418A0003BD2F /* Macros */,
 				A7AB1E931B1F13860003BD2F /* ThirdClasses */,
 				A7AB1E921B1EFA460003BD2F /* DataBase */,
-				A79BF7761B6075E7000D7C80 /* VoiceConvert */,
 				A7AB1E6A1B1EE3D10003BD2F /* ViewModel */,
 				A7AB1E661B1EE2A70003BD2F /* Views */,
 				A7DFA7D41B1EB7B200D6F521 /* ComChat */,
@@ -1739,7 +1652,6 @@
 				A73EA1F01B3AF42C00DF6CCA /* RTCManager.m in Sources */,
 				A7AB1EC71B201F360003BD2F /* MessageViewModel.m in Sources */,
 				A7AB1EA61B2012570003BD2F /* MessageViewController.m in Sources */,
-				A79BF7841B6079B5000D7C80 /* amrFileCodec.mm in Sources */,
 				A7E21C4D1B2C1678005F524A /* NewFriendsViewController.m in Sources */,
 				A7608A171B253AE7009B20AA /* MessageCellFactory.m in Sources */,
 				A73BA9151B4FEC8B001ACA1C /* GroupChatViewController.m in Sources */,
@@ -1748,9 +1660,7 @@
 				A785F15A1B297B62006DC91F /* RealTimeNews.xcdatamodeld in Sources */,
 				A785EF501B282A59006DC91F /* UIScrollView+ZoomToPoint.m in Sources */,
 				A7AB1F241B216B130003BD2F /* UserGroupCell.m in Sources */,
-				A79BF7871B607A4C000D7C80 /* wav.mm in Sources */,
 				A784862E1B53A3E000DDDADA /* FriendManageViewController.m in Sources */,
-				A79BF7791B6076A4000D7C80 /* VoiceConverter.mm in Sources */,
 				A7AB1EA31B2011C30003BD2F /* MainTabBarController.m in Sources */,
 				A7AB1EE71B206F980003BD2F /* EmotionView.m in Sources */,
 				A778033A1B622660005BB5E3 /* NewsCoreDataStorageObject.m in Sources */,
@@ -1921,15 +1831,8 @@
 				INFOPLIST_FILE = ComChat/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"\"$(PODS_ROOT)/XMPPFramework/Vendor/libidn\"",
-					"$(PROJECT_DIR)/ComChat/VoiceConvert/lib",
-					"\"$(SRCROOT)/ComChat/VoiceConvert/lib/\"",
-				);
-				"LIBRARY_SEARCH_PATHS[sdk=iphonesimulator*]" = (
-					"\"$(PODS_ROOT)/XMPPFramework/Vendor/libidn\"",
-					"\"$(SRCROOT)/ComChat/VoiceConvert/lib-x86/\"",
-				);
+				LIBRARY_SEARCH_PATHS = "\"$(PODS_ROOT)/XMPPFramework/Vendor/libidn\"";
+				"LIBRARY_SEARCH_PATHS[sdk=iphonesimulator*]" = "\"$(PODS_ROOT)/XMPPFramework/Vendor/libidn\"";
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "307226f1-50aa-422a-81dc-87c62f4eda2b";
@@ -1968,11 +1871,7 @@
 				INFOPLIST_FILE = ComChat/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"\"$(PODS_ROOT)/XMPPFramework/Vendor/libidn\"",
-					"$(PROJECT_DIR)/ComChat/VoiceConvert/lib",
-					"\"$(SRCROOT)/ComChat/VoiceConvert/lib/\"",
-				);
+				LIBRARY_SEARCH_PATHS = "\"$(PODS_ROOT)/XMPPFramework/Vendor/libidn\"";
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "307226f1-50aa-422a-81dc-87c62f4eda2b";

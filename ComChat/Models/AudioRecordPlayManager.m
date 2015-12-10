@@ -10,7 +10,7 @@
 #import "ResourceManager.h"
 #import "XMPPManager.h"
 #import <JSONKit.h>
-#import "VoiceConverter.h"
+//#import "VoiceConverter.h"
 
 
 @interface AudioRecordPlayManager()<AVAudioPlayerDelegate>
@@ -135,7 +135,7 @@
     // 从AMR转换为WAV格式
     NSLog(@"AMR格式转换为WAV格式...");
     NSString *wavFilePath = [self setWavFilePathFromAmrFile:fileName];
-    [VoiceConverter amrToWav:filePath wavSavePath:wavFilePath];
+    //[VoiceConverter amrToWav:filePath wavSavePath:wavFilePath];
     
     NSURL *URL = nil;
     if ([[NSFileManager defaultManager] fileExistsAtPath:wavFilePath]) {
