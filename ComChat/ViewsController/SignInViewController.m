@@ -207,8 +207,8 @@
 {
     NSLog(@"打开用户注册界面");
     
-    SignInViewController* signInViewController = [[SignInViewController alloc] init];
-    [self.navigationController pushViewController:signInViewController animated:YES];
+    SignUpViewController* signUpViewController = [[SignUpViewController alloc] init];
+    [self.navigationController pushViewController:signUpViewController animated:YES];
     [self.navigationController setNavigationBarHidden:NO];
 }
 
