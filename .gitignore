@@ -1,5 +1,11 @@
-c OS X
-*.DS_Store
+# ignore binary file
+*.[oa]
+
+# ignore vim tempory file.
+*.swp
+
+# ignore DS_Store file.
+.DS_Store
 
 # Xcode
 *.pbxuser
